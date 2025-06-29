@@ -1,7 +1,7 @@
 const Order = require('../models/order');
 const Cart = require('../models/cart');
 
-// Placing order from cart
+// creating order from cart
 exports.placeOrder = async (req, res) => {
   try {
     const cart = await Cart.findOne({ userId: req.user.userId });
