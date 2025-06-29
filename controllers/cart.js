@@ -44,7 +44,7 @@ exports.addToCart = async (req, res) => {
   }
 };
 
-// Remove product from cart
+// delete product from cart
 exports.removeFromCart = async (req, res) => {
   const { productId } = req.params;
 
